@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#009586</color>
+    <color name="colorPrimaryDark">#00766A</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#F2F2F2</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#00766A</color>
+    <color name="text_pressed">#58595B</color>
+    <color name="button_pressed">#ff61c6b5</color>
+    <color name="edit_text_border">#83c7be</color>
+    <color name="forgot_password">#bfbfbf</color>
+    <color name="onboard_button_color">#f8f8f8</color>
+
+</resources>

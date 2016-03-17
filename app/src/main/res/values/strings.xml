@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">Foodingo</string>
+    <string name="tagline">Healthy eating, simplified</string>
+    <string name="drawer_item_foodpicks">Food Picks</string>
+    <string name="drawer_item_exploremeals">Explore Meals</string>
+    <string name="drawer_item_foodcart">Food Cart</string>
+    <string name="drawer_item_preferences">Preferences</string>
+    <string name="drawer_item_calstory">Calstory</string>
+    <string name="drawer_item_blog">Blog</string>
+    <string name="drawer_item_feedback">Feedback</string>
+    <string name="drawer_item_logout">Log out</string>
+    <string name="drawer_item_mealcredit">Meal Credit</string>
+    <string name="drawer_item_snackcredit">Snack Credit</string>
+    <string name="facebook_app_id">308413026016153</string>
+    <string name="parse_app_id">nB6IPLFCUV12m9Fh6RPoYXW5PJMWtOVbTKrnkLb7</string>
+    <string name="parse_client_key">oRwVu7KCqaGbMDrKhBXsPVI23UoPrPmotCkgYdul</string>
+    <string name="facebook_title">login act</string>
+    <string name="login_title">FOODINGO</string>
+    <string name="login_subtitle">Healthy eating, simplified</string>
+    <string name="forgot_password_text">Forgot password?Get help</string>
+    <string name="tell_us">Tell us about your physique...</string>
+    <string name="whats_this">What is this for?</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="life_style">Ok,what about your lifestyle?</string>
+    <string name="preferences">Your preferences help us</string>
+    <string name="preferences_better">recommend better to you</string>
+    <string name="get_recommendation">GET RECOMMENDATION</string>
+    <string name="Hello">HELLO</string>
+    <string name="Invitation_text">Key in your invitation code to get full</string>
+    <string name="access_invitation">access to Foodingo!</string>
+    <string name="confirm">confirm</string>
+    <string name="donthave_invite">Dont have an invite?Fret not,join the</string>
+    <string name="queue">queue and we will send you a gift</string>
+    <string name="join_queue">join the queue</string>
+    <string name="forgot_password">Forgot password? Dont worry!</string>
+    <string name="please_enter">Please enter your associated email</string>
+    <string name="congrats">Congratulations! You have finished all your meals for today. Log any additional intake through Food Cart</string>
+    <string name="forgot_below">below</string>
+    <string name="complete_profile">Complete your profile&#10;so that your nutrition assistant could provide you with best food picks around </string>
+    <string name="meal_target">                    &#10;          Meal Target:&#10;</string>
+    <string name="code">code</string>
+    <string name="your_way">your way</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign up</string>
+    <string name="no_meals">No of meals per day</string>
+    <string name="no_snacks">No of snacks per day</string>
+    <string name="frequency_exercise">Frequency of exercise</string>
+    <string name="weight">weight</string>
+    <string name="height">height</string>
+    <string name="alias">alias</string>
+    <string name="dob">DD/MM/YYYY</string>
+    <string name="sgd">SGD budget per meal</string>
+    <string name="halal">Halal</string>
+    <string name="indifferent">Indifferent</string>
+    <string name="non_halal">Non-Halal</string>
+    <string name="veg">Veg</string>
+    <string name="non_veg">Non-Veg</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="dish_name">DishName</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="sgd30">SGD30</string>
+    <string name="distance">Distance</string>
+    <string name="kcal">KCAL</string>
+
+
+
+
+
+
+    <string-array name="exArray">
+        <item>Little or none</item>
+        <item>1-2 days/week</item>
+        <item>3-5 days/week</item>
+        <item>More than 5</item>
+        <item>Intense exercise/Training</item>
+    </string-array>
+
+    <string-array name="genderArray">
+        <item>male</item>
+        <item>female</item>
+    </string-array>
+
+    <string-array name="mealArray">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>-</item>
+    </string-array>
+
+    <string-array name="snackArray">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>-</item>
+    </string-array>
+
+
+</resources>

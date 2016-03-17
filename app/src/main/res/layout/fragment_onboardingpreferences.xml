@@ -1,0 +1,423 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:text="@string/preferences"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/preferences_better"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView2"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/whats_this"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/forgot_password"
+                    android:textSize="15sp" />
+
+
+                <EditText
+                    android:id="@+id/budget_Pref_ET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView9"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="@string/sgd"
+                    android:inputType="numberDecimal"
+                    android:text="10"
+                    android:textColor="@color/colorPrimary" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/budget_Pref_ET"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/ic_halal" />
+
+                <RelativeLayout
+                    android:id="@+id/halalRL"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toEndOf="@+id/imageView7"
+                    android:layout_toRightOf="@+id/imageView7">
+
+
+                    <RadioButton
+                        android:id="@+id/halalRB1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="-8dp"
+                        android:checked="false" />
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dip"
+                        android:layout_marginTop="15dp"
+                        android:layout_toLeftOf="@+id/halalRB2"
+                        android:layout_toRightOf="@+id/halalRB1"
+                        android:background="@color/colorPrimary" />
+
+                    <RadioButton
+                        android:id="@+id/halalRB2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="-8dp"
+                        android:layout_marginRight="-8dp"
+                        android:checked="false" />
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dip"
+                        android:layout_marginTop="15dp"
+                        android:layout_toLeftOf="@+id/halalRB3"
+                        android:layout_toRightOf="@+id/halalRB2"
+                        android:background="@color/colorPrimary" />
+
+                    <RadioButton
+                        android:id="@+id/halalRB3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="false"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="-8dp"
+                        android:checked="false" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/halalRB1"
+                        android:text="@string/halal"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/halalRB2"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/indifferent"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/halalRB3"
+                        android:text="@string/non_halal"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimary" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/vegRL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/ic_vegetarian" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toEndOf="@+id/imageView8"
+                    android:layout_toRightOf="@+id/imageView8">
+
+
+                    <RadioButton
+                        android:id="@+id/vegRB1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="-8dp"
+                        android:checked="false" />
+
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dip"
+                        android:layout_marginTop="15dp"
+                        android:layout_toLeftOf="@+id/vegRB2"
+                        android:layout_toRightOf="@+id/vegRB1"
+                        android:background="@color/colorPrimary" />
+
+                    <RadioButton
+                        android:id="@+id/vegRB2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="-8dp"
+                        android:layout_marginRight="-8dp"
+                        android:checked="false" />
+
+                    <View
+                        android:id="@+id/view23"
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dip"
+                        android:layout_marginTop="15dp"
+                        android:layout_toLeftOf="@+id/vegRB3"
+                        android:layout_toRightOf="@+id/vegRB2"
+                        android:background="@color/colorPrimary" />
+
+                    <RadioButton
+                        android:id="@+id/vegRB3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="false"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="-8dp"
+                        android:checked="false" />
+
+                    <TextView
+                        android:id="@+id/textView3w"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/vegRB1"
+                        android:text="@string/veg"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/textView34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/vegRB2"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/indifferent"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/textView53"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/vegRB3"
+                        android:text="@string/non_veg"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimary" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/seaFoodRL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/ic_seafood" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toEndOf="@+id/imageView9"
+                    android:layout_toRightOf="@+id/imageView9">
+
+
+                    <RadioButton
+                        android:id="@+id/seaRB1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="-8dp"
+                        android:checked="false" />
+
+                    <View
+                        android:id="@+id/view144"
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dip"
+                        android:layout_marginTop="15dp"
+                        android:layout_toLeftOf="@+id/seaRB2"
+                        android:layout_toRightOf="@+id/seaRB1"
+                        android:background="@color/colorPrimary" />
+
+                    <RadioButton
+                        android:id="@+id/seaRB2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="-8dp"
+                        android:layout_marginRight="-8dp"
+                        android:checked="false" />
+
+                    <View
+                        android:id="@+id/view234"
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dip"
+                        android:layout_marginTop="15dp"
+                        android:layout_toLeftOf="@+id/seaRB3"
+                        android:layout_toRightOf="@+id/seaRB2"
+                        android:background="@color/colorPrimary" />
+
+                    <RadioButton
+                        android:id="@+id/seaRB3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="false"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="-8dp"
+                        android:checked="false" />
+
+                    <TextView
+                        android:id="@+id/textView333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/seaRB1"
+                        android:text="@string/yes"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/textView341"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/seaRB2"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/indifferent"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/textView535"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/seaRB3"
+                        android:text="@string/no"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimary" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/finish_PREF_BTN"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dobBTN"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/onboard_button_color"
+            android:text="@string/get_recommendation"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+
+</RelativeLayout>

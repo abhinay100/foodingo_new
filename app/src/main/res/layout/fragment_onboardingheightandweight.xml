@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/tell_us"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/colorPrimary"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:text="@string/whats_this"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/forgot_password"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp">
+
+
+        <RelativeLayout
+            android:id="@+id/weightlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <EditText
+                android:id="@+id/weight_ET"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="@string/weight"
+                android:inputType="textEmailAddress"
+                android:lines="1"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                android:theme="@style/EditTextLabel" />
+
+
+            <SeekBar
+                android:id="@+id/WeightseekBarID"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/weight_ET"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:max="250"
+                android:theme="@style/EditTextLabel"></SeekBar>
+
+            <ToggleButton
+                android:id="@+id/weight_toggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/weight_ET"
+                android:background="@drawable/green_general_button"
+                android:textOn="LBS"
+                android:textOff="KG"
+                android:textColor="@color/textColorPrimary" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/heightlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/weightlayout"
+            android:layout_centerHorizontal="true">
+
+            <EditText
+                android:id="@+id/height_ET"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:hint="@string/height"
+                android:inputType="textEmailAddress"
+                android:lines="1"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                android:theme="@style/EditTextLabel" />
+
+            <SeekBar
+                android:id="@+id/heightseekBarID"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/height_ET"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:max="250"
+                android:theme="@style/EditTextLabel" />
+
+            <ToggleButton
+                android:id="@+id/height_toggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/height_ET"
+                android:background="@drawable/green_general_button"
+                android:textOn="INCHES"
+                android:textOff="CM"
+                android:textColor="@color/textColorPrimary" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/heightlayout"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:id="@+id/nextbutton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/onboard_button_color"
+                android:text="@string/next"
+                android:textColor="@color/colorPrimary" />
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nextbutton"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/or_onboard" />
+
+            <Button
+                android:id="@+id/skipbutton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/onboard_button_color"
+                android:text="@string/skip"
+                android:textColor="@color/colorPrimary" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

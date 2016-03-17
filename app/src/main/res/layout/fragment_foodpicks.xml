@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recomfragmentid"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+
+
+    <!--</LinearLayout>-->
+    <RelativeLayout
+        android:id="@+id/buttonlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonClick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text="@string/complete_profile"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/buttonClickmeal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text="@string/meal_target"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/activity_main_swipe_refresh_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/buttonlayout">
+
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_below="@id/buttonlayout" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <ImageView
+        android:id="@+id/gpsenable"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:cacheColorHint="#00000000"
+        android:src="@drawable/gpslocation"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/noresult"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:cacheColorHint="#00000000"
+        android:src="@drawable/noresult"
+        android:visibility="invisible" />
+
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/foodCart_BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_food_cart_white"
+        fab:fab_colorNormal="@color/primary"
+        fab:fab_colorPressed="@color/button_pressed"
+        fab:fab_colorRipple="@color/colorPrimaryDark" />
+
+
+</RelativeLayout>

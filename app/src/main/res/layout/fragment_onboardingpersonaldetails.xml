@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/placeholder_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="2"
+        android:background="@color/colorPrimary">
+
+        <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profilePic_IV"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/profile_pic"
+            app:riv_border_color="@color/textColorPrimary"
+            app:riv_border_width="5dp"
+            app:riv_corner_radius="30dip"
+            app:riv_mutate_background="true"
+            app:riv_oval="true" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/aliaslayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/placeholder_image"
+        android:layout_marginTop="40dp"
+        android:theme="@style/EditTextLabel">
+
+        <EditText
+            android:id="@+id/username_ET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/logo_LOGIN_IV"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:hint="@string/alias"
+            android:inputType="textEmailAddress"
+            android:lines="1"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/genderlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aliaslayout"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp">
+
+
+        <RelativeLayout
+            android:id="@+id/maleRL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="25dp">
+
+            <ImageView
+                android:id="@+id/boyIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/ic_boy" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/femaleRL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp">
+
+
+            <ImageView
+                android:id="@+id/girlIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/ic_girl" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/birthdaylayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/genderlayout"
+        android:layout_weight="1">
+
+
+        <Button
+            android:id="@+id/dobBTN"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/dob"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30dp" />
+
+
+        <Button
+            android:id="@+id/nextBTN"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dobBTN"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/onboard_button_color"
+            android:text="@string/next"
+            android:textColor="@color/colorPrimary" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
